@@ -63,13 +63,13 @@ while True: # estrutura de escolha caso com condicionais
             else:
                 print("Índice inválido.\n")
 
-    elif escolha == "4":
+    elif escolha == "4": # vai apagar os dados necessario de um usuario.
         if not cadastro:
             print("Nenhum contato para excluir.\n")
             continue
         print("Contatos disponíveis:")
-        for i, contato in enumerate(cadastro):
-            print(f"{i} - Nome: {contato[0]}, Telefone: {contato[1]}, E-mail: {contato[2]}")
+        for i, cadastros in enumerate(cadastro):
+            print(f"{i} - Nome: {cadastros[0]}, Telefone: {cadastros[1]}, E-mail: {cadastros[2]}")
 
         indice = input("Digite o índice do contato que deseja excluir: ")
         if not indice.isdigit():
@@ -77,13 +77,13 @@ while True: # estrutura de escolha caso com condicionais
             continue
         indice = int(indice)
 
-        if 0 <= indice < len(cadastro):
+        if 0 <= indice < len(cadastro): #vai contar a quantidade de caracter
             cadastro.pop(indice)
             print("Contato excluído com sucesso!\n")
         else:
             print("Índice inválido.\n")
 
-    elif escolha == "5":
+    elif escolha == "5": # vai sair do programa 
         print("Saindo do programa...")
         break # sinal de pare 
 
