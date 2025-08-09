@@ -2,7 +2,7 @@ print("--- TELA DE CADASTRO ---")
 
 cadastro = []
 
-while True:
+while True: # estrutura de escolha caso com condicionais 
     print("=== Gerenciador de Contatos ===")
     print("1 - Cadastrar contato")
     print("2 - Listar contatos")
@@ -12,23 +12,23 @@ while True:
 
     escolha = input("Escolha uma opção: ")
 
-    if escolha == "1": 
+    if escolha == "1": # caso o usuario escolhha o 1 ele vai adicionar as informações dele nome, telefone e email 
         nome = input("Digite seu nome: ")
         telefone = input("Digite seu telefone: ")
         email = input("Digite seu Email: ")
         cadastro.append([nome, telefone, email])
         print("Contato cadastrado com sucesso!\n")
 
-    elif escolha == "2":
+    elif escolha == "2": # ele vai listar os usuario já cadastrados, se nao ele vai dar erro e vai alegar que nao tem nada cadastrado 
         if not cadastro:
             print("\nNENHUM DADO CADASTRADO!!!")
         else:
             print("Lista de contatos:")
-            for i, cadastros in enumerate(cadastro):
+            for i, cadastros in enumerate(cadastro): #  vai concatenar as informaçoes do nome mais o indice 0 
                 print(f"{i} - Nome: {cadastros[0]}, Telefone: {cadastros[1]}, E-mail: {cadastros[2]}")
             print()
 
-    elif escolha == "3":
+    elif escolha == "3": # vai atualizar os dados necessario escolhido pelo usuario.
         if not cadastro:
             print("Nenhum contato para ser atualizado!!\n")
             continue
@@ -37,7 +37,7 @@ while True:
             for i, cadastros in enumerate(cadastro):
                 print(f"{i} - Nome: {cadastros[0]}, Telefone: {cadastros[1]}, E-mail: {cadastros[2]}")
             indice = input("Digite o número do contato que deseja atualizar: (obs: digite apenas número) ")
-            if not indice.isdigit():
+            if not indice.isdigit(): # converte str em inteiro, o indece só vai de 0 a 2
                 print("Entrada inválida!!\n")
                 continue
             indice = int(indice)
