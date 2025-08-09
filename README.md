@@ -1,3 +1,7 @@
+Realizado por Victor Sette, Cayo Luiz, Matheus Ferreira e Eduardo Baptista 
+
+Turma 039 - ADS - MANHÃ
+
 Esse programa é um gerenciador simples de contatos em Python, que roda no console e permite ao usuário:
 
 Cadastrar contatos: inserir nome, telefone e e-mail, que são armazenados numa lista chamada cadastro.
