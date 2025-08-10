@@ -1,4 +1,4 @@
-Realizado por Victor Sette, Cayo Luiz, Matheus Ferreira e Eduardo Baptista 
+Realizado por Victor Sette, Cayo Luiz, Matheus Ferreira, Eduardo Baptista e Joseu Heitor.
 
 Turma 039 - ADS - MANHÃ
 
