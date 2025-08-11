@@ -1,5 +1,5 @@
-Realizado por Victor Sette, Cayo Luiz, Matheus Ferreira, Eduardo Baptista e Joseu Heitor.
-
+Realizado por Victor Sette, Cayo Luiz, Matheus Ferreira, Eduardo Baptista, Joseu Heitor e Sam diego
+.
 Turma 039 - ADS - MANHÃ
 
 Esse programa é um gerenciador simples de contatos em Python, que roda no console e permite ao usuário:
